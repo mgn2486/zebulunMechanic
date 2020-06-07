@@ -29,7 +29,7 @@ module.exports = "<app-layout>\r\n  <mat-sidenav-container>\r\n    <mat-sidenav 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>contactus works!</p>\n"
+module.exports = "<div class=\"container\">\n    <h4>CONTACT US</h4>  \n  <hr class=\"section-hr-line\">\n  <p>Please use any of the following options</p>\n  \n  <div class=\"container\">\n    <div class=\"row\">\n      <div class=\"col-12 col-md-8\">\n        <mat-card>\n            <mat-card-header color=\"primary\">\n               <mat-card-title> <h4 class=\"site-text\">Send Us a Message</h4></mat-card-title>\n               <hr>\n           </mat-card-header>\n           <!-- <img mat-card-image src=\"assets/images/home/home_2.jpg\" alt=\"Photo of a Shiba Inu\"> -->\n           <mat-card-content>\n            <form [formGroup]=\"ContactForm\" autocomplete=\"off\" class=\"col-12 white\" (ngSubmit)=\"OnSubmit(ContactForm)\" (blur)=\"logValidationErrors()\">\n                  <div class=\"input-field-class\">\n          \n                    <div class=\"row\">\n                      <mat-form-field  class=\"col-12\">\n                        <mat-label>Full Name</mat-label>\n                        <input matInput placeholder=\"Full Name\" #fullName ngModel formControlName=\"fullName\" (blur)=\"logValidationErrors()\">\n                        <mat-icon matPrefix>person_outline</mat-icon>\n                        <mat-error *ngIf=\"formErrors.fullName\"><b>{{formErrors.fullName}}</b></mat-error>\n                      </mat-form-field>\n                    </div>\n          \n                    <div class=\"row\">\n                      <mat-form-field  class=\"col\">\n                        <mat-label>Email Address</mat-label>    \n                        <input matInput placeholder=\"Email Address\" #emailAddress ngModel formControlName=\"emailAddress\" (blur)=\"logValidationErrors()\">\n                        <mat-icon matPrefix>mail</mat-icon>\n                        <mat-error *ngIf=\"formErrors.emailAddress\"><b>{{formErrors.emailAddress}}</b></mat-error>\n                      </mat-form-field>\n                    </div>\n          \n                    <div class=\"row\">\n                      <mat-form-field class=\"col\">\n                        <mat-label>Subject</mat-label>      \n                        <input matInput (keyup)=\"applyFilter($event.target.value)\"  placeholder=\"Subject\" #subject ngModel formControlName=\"subject\" (blur)=\"logValidationErrors()\">\n                        <mat-icon matPrefix>mail</mat-icon>\n                        <mat-error *ngIf=\"formErrors.subject\"><b>{{formErrors.subject}}</b></mat-error>\n                      </mat-form-field>\n                    </div>\n          \n                    <div class=\"row\">\n                        <mat-form-field class=\"col stretch-height\" >\n                            <mat-label>Message</mat-label>\n                            <textarea matInput rows=\"10\" (keyup)=\"applyFilter($event.target.value)\"  placeholder=\"Message\" formControlName=\"message\" (blur)=\"logValidationErrors()\"></textarea>\n                            <mat-error *ngIf=\"formErrors.message\"><b>{{formErrors.message}}</b></mat-error>\n                          </mat-form-field>\n                    </div>\n          \n                    <div class=\"row s12\">\n                      <button color=\"primary\" [disabled]=\"!ContactForm.valid\" mat-raised-button>Sign - UP</button>\n                    </div>\n                  </div>\n               </form>\n           </mat-card-content>\n          </mat-card> \n      </div>\n      <div class=\"col-12 col-md-4\">\n        <h4>Call Us</h4>\n      <hr>\n      <p>\n        <b>Landline : </b> +27 (0)79 552 9894 <br>\n        <b>Mobile : </b>+27 (0)65 933 9191  <br>\n        <b>Email  : </b> info@zebulun-mechanic.co.za <br>       \n    \n        <br>\n        kudzi@zebulunmechanic.co.za\n        <br>\n        info@zebulunmechanic.co.za\n        <br>       \n      </p>\n      <br>\n      <h4>Physical Address : </h4>\n      <hr>\n      <p> \n        1 Helston Road <br>Manor Gardens <br>Durban,<br> 4001     \n      </p>\n      </div>\n    </div>\n  \n    <div class=\"row\">\n      <div class=\"col\">\n          <iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3460.154426062503!2d30.979720315110836!3d-29.859819981949762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef7aa035588fdc3%3A0xbbf19900bf754834!2s1+Helston+Rd%2C+Westridge%2C+Berea%2C+4091!5e0!3m2!1sen!2sza!4v1544405290074\" width=\"100%\" height=\"450\" frameborder=\"0\" style=\"border:1 px solid grey\" allowfullscreen></iframe>\n      </div>\n    </div>\n  </div>\n  </div>"
 
 /***/ }),
 
@@ -41,6 +41,17 @@ module.exports = "<p>contactus works!</p>\n"
 /***/ (function(module, exports) {
 
 module.exports = "<p>footer works!</p>\n"
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/index.js!./src/app/forbiden/forbiden.component.html":
+/*!****************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/forbiden/forbiden.component.html ***!
+  \****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"row\">\n    <mat-card>\n        <mat-card-header>\n            <mat-card-title>403 - ACCESS DENIED</mat-card-title>\n        </mat-card-header>\n        <img mat-card-image src=\"assets/images/403.png\" alt=\"Access Denied\">\n        <mat-card-content>\n            <p>You don't have the permission to access this resource.</p>\n        </mat-card-content>\n        <mat-card-actions>\n            <button mat-button>Close</button>\n        </mat-card-actions>\n    </mat-card>\n</div>\n\n\n  "
 
 /***/ }),
 
@@ -400,12 +411,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _zebu_images_image_list_image_list_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./zebu-images/image-list/image-list.component */ "./src/app/zebu-images/image-list/image-list.component.ts");
 /* harmony import */ var _zebu_images_image_navigation_image_navigation_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./zebu-images/image-navigation/image-navigation.component */ "./src/app/zebu-images/image-navigation/image-navigation.component.ts");
 /* harmony import */ var _zebu_images_gallery_gallery_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./zebu-images/gallery/gallery.component */ "./src/app/zebu-images/gallery/gallery.component.ts");
+/* harmony import */ var _shared_services_email_service_email_service__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./shared/services/email-service/email.service */ "./src/app/shared/services/email-service/email.service.ts");
+/* harmony import */ var _forbiden_forbiden_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./forbiden/forbiden.component */ "./src/app/forbiden/forbiden.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
 
 
 
@@ -451,7 +466,8 @@ AppModule = __decorate([
             _management_management_component__WEBPACK_IMPORTED_MODULE_21__["ManagementComponent"],
             _zebu_images_gallery_gallery_component__WEBPACK_IMPORTED_MODULE_24__["GalleryComponent"],
             _zebu_images_image_list_image_list_component__WEBPACK_IMPORTED_MODULE_22__["ImageListComponent"],
-            _zebu_images_image_navigation_image_navigation_component__WEBPACK_IMPORTED_MODULE_23__["ImageNavigationComponent"]
+            _zebu_images_image_navigation_image_navigation_component__WEBPACK_IMPORTED_MODULE_23__["ImageNavigationComponent"],
+            _forbiden_forbiden_component__WEBPACK_IMPORTED_MODULE_26__["ForbidenComponent"]
         ],
         imports: [
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"].withServerTransition({ appId: 'ng-cli-universal' }),
@@ -461,7 +477,7 @@ AppModule = __decorate([
                 progressBar: true
             })
         ],
-        providers: [],
+        providers: [_shared_services_email_service_email_service__WEBPACK_IMPORTED_MODULE_25__["EmailService"]],
         bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"]]
     })
 ], AppModule);
@@ -477,7 +493,7 @@ AppModule = __decorate([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbnRhY3R1cy9jb250YWN0dXMuY29tcG9uZW50LmNzcyJ9 */"
+module.exports = ".input-field-class {\r\n    display: flex;\r\n    flex-direction: column;\r\n  }\r\n  \r\n  .example-container > * {\r\n    width: 100%;\r\n  }\r\n  \r\n  .login-icon{\r\n  margin-left: 10px;\r\n}\r\n  \r\n  .icon-section{\r\n  margin-right: 10px;\r\n}\r\n  \r\n  /* ::ng-deep .mat-card-header{\r\n  padding-top: 3px;\r\n  background-color: #5f0310 !important;\r\n  color: white;\r\n}  */\r\n  \r\n  ::ng-deep .mat-card-header{\r\n  background-color: #6A1B9A !important;\r\n  color: white;\r\n  padding:5px !important;\r\n}\r\n  \r\n  ::ng-deep .mat-card{\r\n  padding:0 !important;\r\n}\r\n  \r\n  ::ng-deep .mat-card-content{\r\n  padding:5px !important;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29udGFjdHVzL2NvbnRhY3R1cy5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksYUFBYTtJQUNiLHNCQUFzQjtFQUN4Qjs7RUFFQTtJQUNFLFdBQVc7RUFDYjs7RUFFRjtFQUNFLGlCQUFpQjtBQUNuQjs7RUFFQTtFQUNFLGtCQUFrQjtBQUNwQjs7RUFFQTs7OztJQUlJOztFQUVKO0VBQ0Usb0NBQW9DO0VBQ3BDLFlBQVk7RUFDWixzQkFBc0I7QUFDeEI7O0VBRUE7RUFDRSxvQkFBb0I7QUFDdEI7O0VBRUE7RUFDRSxzQkFBc0I7QUFDeEIiLCJmaWxlIjoic3JjL2FwcC9jb250YWN0dXMvY29udGFjdHVzLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuaW5wdXQtZmllbGQtY2xhc3Mge1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbiAgfVxyXG4gIFxyXG4gIC5leGFtcGxlLWNvbnRhaW5lciA+ICoge1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgfVxyXG5cclxuLmxvZ2luLWljb257XHJcbiAgbWFyZ2luLWxlZnQ6IDEwcHg7XHJcbn1cclxuXHJcbi5pY29uLXNlY3Rpb257XHJcbiAgbWFyZ2luLXJpZ2h0OiAxMHB4O1xyXG59XHJcblxyXG4vKiA6Om5nLWRlZXAgLm1hdC1jYXJkLWhlYWRlcntcclxuICBwYWRkaW5nLXRvcDogM3B4O1xyXG4gIGJhY2tncm91bmQtY29sb3I6ICM1ZjAzMTAgIWltcG9ydGFudDtcclxuICBjb2xvcjogd2hpdGU7XHJcbn0gICovXHJcblxyXG46Om5nLWRlZXAgLm1hdC1jYXJkLWhlYWRlcntcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjNkExQjlBICFpbXBvcnRhbnQ7XHJcbiAgY29sb3I6IHdoaXRlO1xyXG4gIHBhZGRpbmc6NXB4ICFpbXBvcnRhbnQ7XHJcbn1cclxuXHJcbjo6bmctZGVlcCAubWF0LWNhcmR7XHJcbiAgcGFkZGluZzowICFpbXBvcnRhbnQ7XHJcbn1cclxuXHJcbjo6bmctZGVlcCAubWF0LWNhcmQtY29udGVudHtcclxuICBwYWRkaW5nOjVweCAhaW1wb3J0YW50O1xyXG59XHJcbiJdfQ== */"
 
 /***/ }),
 
@@ -492,6 +508,9 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ContactusComponent", function() { return ContactusComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var ngx_toastr__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ngx-toastr */ "./node_modules/ngx-toastr/fesm2015/ngx-toastr.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+/* harmony import */ var _shared_services_email_service_email_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../shared/services/email-service/email.service */ "./src/app/shared/services/email-service/email.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -502,18 +521,117 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
+
+
 let ContactusComponent = class ContactusComponent {
-    constructor() { }
+    constructor(toastr, fb, emailService) {
+        this.toastr = toastr;
+        this.fb = fb;
+        this.emailPattern = "^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$";
+        // This object will hold the messages to be displayed to the user
+        // Notice, each key in this object has the same name as the
+        // corresponding form control
+        this.formErrors = {
+            'fullName': '',
+            'emailAddress': '',
+            'subject': '',
+            'message': ''
+        };
+        // This object contains all the validation messages for this form
+        this.validationMessages = {
+            'fullName': {
+                'required': 'Full name is required.',
+                'minlength': 'Full name must be greater than 2 characters.',
+                'maxlength': 'Full name must be less than 100 characters.'
+            },
+            'emailAddress': {
+                'required': 'Email address is required.',
+                'minlength': 'Email address address must be greater than 11 characters.',
+                'maxlength': 'Email address address must be less than 150 characters.',
+                'emailDomain': 'Email address domian should be devine-tech.com'
+            },
+            'subject': {
+                'required': 'Subject is required.',
+                'minlength': 'Subject must be greater than 5 characters.',
+                'maxlength': 'Subject must be less than 150 characters.',
+            },
+            'message': {
+                'required': 'Message is required.',
+                'minlength': 'Message must be greater than 5 characters.',
+                'maxlength': 'Message must be less than 150 characters.',
+            }
+        };
+        this.hasError = (controlName, errorName) => {
+            return this.ContactForm.controls[controlName].hasError(errorName);
+        };
+    }
     ngOnInit() {
+        this.ContactForm = this.fb.group({
+            fullName: new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"]('', [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required, _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].minLength(5), _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].maxLength(60)]),
+            emailAddress: new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"]('', [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required, _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].minLength(11), _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].maxLength(150)]),
+            subject: new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"]('', [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required, _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].minLength(2), _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].maxLength(60)]),
+            message: new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"]('', [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required, _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].maxLength(200)]),
+        });
+        this.ContactForm.valueChanges.subscribe((data) => {
+            this.logValidationErrors(this.ContactForm);
+        });
+    }
+    logValidationErrors(group = this.ContactForm) {
+        Object.keys(group.controls).forEach((key) => {
+            const abstractControl = group.get(key);
+            this.formErrors[key] = '';
+            if (abstractControl && !abstractControl.valid
+                && (abstractControl.touched || abstractControl.dirty)) {
+                const messages = this.validationMessages[key];
+                for (const errorKey in abstractControl.errors) {
+                    if (errorKey) {
+                        this.formErrors[key] += messages[errorKey] + ' ';
+                    }
+                }
+            }
+            if (abstractControl instanceof _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormGroup"]) {
+                this.logValidationErrors(abstractControl);
+            }
+        });
+    }
+    OnSubmit(form) {
+        // var formData = form.value;
+        // const userData: User = this.getUserInformation(formData)
+        // this.userService.registerUser(userData)
+        //   .subscribe((data: any) => {
+        //     if (data.succeeded == true) {
+        //       this.resetForm(form);
+        //       this.toastr.success('User registration successful', "Success!");
+        //     }
+        //     else
+        //       this.toastr.error(data.errors[0].description);
+        //   });
+    }
+    resetForm(form) {
+        if (form != null)
+            form.reset();
+        this.contactData = {
+            UserName: '',
+            Password: '',
+            Email: '',
+            FirstName: '',
+            LastName: ''
+        };
     }
 };
+ContactusComponent.ctorParameters = () => [
+    { type: ngx_toastr__WEBPACK_IMPORTED_MODULE_1__["ToastrService"] },
+    { type: _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"] },
+    { type: _shared_services_email_service_email_service__WEBPACK_IMPORTED_MODULE_3__["EmailService"] }
+];
 ContactusComponent = __decorate([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
         selector: 'app-contactus',
         template: __webpack_require__(/*! raw-loader!./contactus.component.html */ "./node_modules/raw-loader/index.js!./src/app/contactus/contactus.component.html"),
         styles: [__webpack_require__(/*! ./contactus.component.css */ "./src/app/contactus/contactus.component.css")]
     }),
-    __metadata("design:paramtypes", [])
+    __metadata("design:paramtypes", [ngx_toastr__WEBPACK_IMPORTED_MODULE_1__["ToastrService"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"], _shared_services_email_service_email_service__WEBPACK_IMPORTED_MODULE_3__["EmailService"]])
 ], ContactusComponent);
 
 
@@ -565,6 +683,56 @@ FooterComponent = __decorate([
     }),
     __metadata("design:paramtypes", [])
 ], FooterComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/forbiden/forbiden.component.css":
+/*!*************************************************!*\
+  !*** ./src/app/forbiden/forbiden.component.css ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "::ng-deep .mat-card-header{\r\n  background-color: red !important;\r\n}\r\n\r\n::ng-deep .mat-card-title{\r\n  color: white;\r\n  padding-top: 10px;\r\n}\r\n\r\n::ng-deep .mat-card-content{\r\n  padding:5px !important;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvZm9yYmlkZW4vZm9yYmlkZW4uY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGdDQUFnQztBQUNsQzs7QUFFQTtFQUNFLFlBQVk7RUFDWixpQkFBaUI7QUFDbkI7O0FBRUE7RUFDRSxzQkFBc0I7QUFDeEIiLCJmaWxlIjoic3JjL2FwcC9mb3JiaWRlbi9mb3JiaWRlbi5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiOjpuZy1kZWVwIC5tYXQtY2FyZC1oZWFkZXJ7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogcmVkICFpbXBvcnRhbnQ7XHJcbn1cclxuXHJcbjo6bmctZGVlcCAubWF0LWNhcmQtdGl0bGV7XHJcbiAgY29sb3I6IHdoaXRlO1xyXG4gIHBhZGRpbmctdG9wOiAxMHB4O1xyXG59XHJcblxyXG46Om5nLWRlZXAgLm1hdC1jYXJkLWNvbnRlbnR7XHJcbiAgcGFkZGluZzo1cHggIWltcG9ydGFudDtcclxufSJdfQ== */"
+
+/***/ }),
+
+/***/ "./src/app/forbiden/forbiden.component.ts":
+/*!************************************************!*\
+  !*** ./src/app/forbiden/forbiden.component.ts ***!
+  \************************************************/
+/*! exports provided: ForbidenComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ForbidenComponent", function() { return ForbidenComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+let ForbidenComponent = class ForbidenComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+};
+ForbidenComponent = __decorate([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+        selector: 'app-forbiden',
+        template: __webpack_require__(/*! raw-loader!./forbiden.component.html */ "./node_modules/raw-loader/index.js!./src/app/forbiden/forbiden.component.html"),
+        styles: [__webpack_require__(/*! ./forbiden.component.css */ "./src/app/forbiden/forbiden.component.css")]
+    }),
+    __metadata("design:paramtypes", [])
+], ForbidenComponent);
 
 
 
@@ -891,6 +1059,41 @@ SidenavListComponent = __decorate([
     }),
     __metadata("design:paramtypes", [])
 ], SidenavListComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/shared/services/email-service/email.service.ts":
+/*!****************************************************************!*\
+  !*** ./src/app/shared/services/email-service/email.service.ts ***!
+  \****************************************************************/
+/*! exports provided: EmailService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EmailService", function() { return EmailService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+let EmailService = class EmailService {
+    constructor() { }
+};
+EmailService = __decorate([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
+        providedIn: 'root'
+    }),
+    __metadata("design:paramtypes", [])
+], EmailService);
 
 
 
