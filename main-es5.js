@@ -22,6 +22,17 @@ module.exports = "<app-layout>\r\n  <mat-sidenav-container>\r\n    <mat-sidenav 
 
 /***/ }),
 
+/***/ "./node_modules/raw-loader/index.js!./src/app/banner/banner.component.html":
+/*!************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/banner/banner.component.html ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div id=\"carouselExampleSlidesOnly\" class=\"carousel slide\" data-ride=\"carousel\">\n  <div class=\"carousel-inner\">\n    <div class=\"carousel-item active\">\n      <img class=\"d-block w-100\" src=\"assets/images/banner/banner_1.jpg\" alt=\"First slide\">\n    </div>\n    <div class=\"carousel-item\">\n      <img class=\"d-block w-100\" src=\"assets/images/banner/banner_2.jpg\" alt=\"Second slide\">\n    </div>\n    <div class=\"carousel-item\">\n      <img class=\"d-block w-100\" src=\"assets/images/banner/banner_3.jpg\" alt=\"Third slide\">\n    </div>\n  </div>\n</div>\n<br>"
+
+/***/ }),
+
 /***/ "./node_modules/raw-loader/index.js!./src/app/contactus/contactus.component.html":
 /*!******************************************************************************!*\
   !*** ./node_modules/raw-loader!./src/app/contactus/contactus.component.html ***!
@@ -40,7 +51,7 @@ module.exports = "<div class=\"container\">\n    <h4>CONTACT US</h4>  \n  <hr cl
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>footer works!</p>\n"
+module.exports = "<div class=\"container-fluid\" id=\"footer\" >\n        <div class=\"container\" style=\"padding:10px;\">\n            <div class=\"container\">\n                  <div id=\"footer\" class=\"row\" style=\"margin-top: 50px;\">\n                    <div class=\"col-lg-12 col-xs-12\">\n                    <hr class=\"one\">\n                    </div>\n    \n                      <div class=\"col-lg-4 col-xs-12\">\n                          <p>OUR - <span class=\"primaryText\"> VISION</span></p>               \n                          <hr class=\"section-hr-line\"/>\n                          <p>Our vision is to excel  we are committed to provide hands-on service. we are committed to provide hands-on service. we are committed to provide hands-on service. we are committed to provide hands-on service.\n                          </p>       \n                      </div>\n                  \n                      <div class=\"col-lg-4 col-xs-12  \">\n                          <p>OUR - <span class=\"primaryText\"> MISSION</span></p>\n                          <hr class=\"section-hr-line\"/>\n                          <p>\n                              <b>Zebulun</b> we are committed to provide hands-on service. we are committed to provide hands-on service. \n                              we are committed to provide hands-on service. we are committed to provide hands-on service. we are committed to provide hands-on service. we are committed to provide hands-on service.\n                          </p>   \n                      </div>\n                  \n                      <div class=\"col-lg-4 col-xs-12  \">\n                          <p>CONTACT - <span class=\"primaryText\"> US</span></p>\n                          <hr class=\"section-hr-line\"/> \n                          <p>\n                            For any information regarding the companies services. </p>                   \n                           <div class=\"row\">\n                               <div class=\"col-lg-4\">\n                               <p>   Visit Us At :</p> \n                               </div>\n                               <div class=\"col-lg-8\">\n                                  <p>1 Helston Road,<br> Westridge, Berea,<br>Durban, 4091.</p>\n                              </div>\n                           </div>  \n      \n                          <div class=\"row\">\n                            <div class=\"col-lg-12\">\n                               <p> \n                                 <b>Landline : </b> +27 (0) 31 261 1907 <br>\n                                 <b>Mobile : </b>+27 (0) 78 253 9442  <br>\n                                 <b>Or     : </b>+27 (0) 65 822 3164  <br>\n                                 <b>Email  : </b> info@zebulun.co.za <br> \n                               </p> \n                            </div>\n                          </div>                              \n                                                                   \n                      </div>  \n                  </div>\n                  \n                  <div class=\"row\">\n                    <div class=\"col-lg-8 col-md-8 col-sm-12\">\n                        <p> &copy; Zebulun : Copyright &copy; 2020 - All rights reserved</p>\n                    </div>\n                  </div>\n              </div>\n      \n        </div>  \n      </div>\n    "
 
 /***/ }),
 
@@ -62,7 +73,7 @@ module.exports = "<div class=\"row\">\n    <mat-card>\n        <mat-card-header>
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>home works!</p>\n"
+module.exports = "<section fxLayout=\"column\" fxFlexAlign=\"stretch\">\n    <app-banner></app-banner>\n\n    <div fxLayout=\"row wrap\" class=\"main-layout\" fxLayoutAlign=\"center center\" class=\"layout-wrapper\" >\n       <div fxFlex=\"80%\" fxFlex.lt-md=\"100%\" class=\"flex-wrapper\">\n            <div class=\"row\">\n\n                    <div class=\"mx-auto center-block\" style=\"text-align:center;\">\n                        <h5>Oil Cahnge</h5>\n                        <p>Zebulun Working towards completion <br> Working towards completion</p>\n                        <p>We do it all</p>\n                    </div>\n\n                    <div class=\"mx-auto center-block\" style=\"text-align:center;\">\n                        <h5>Servicing</h5>\n                        <p>Zebulun Working towards completion <br> Working towards completion</p>\n                        <p>We do it all</p>\n                    </div>\n\n                    <div class=\"mx-auto center-block\" style=\"text-align:center;\">\n                        <h5>Filters</h5>\n                        <p>Zebulun Working towards completion <br> Working towards completion</p>\n                        <p>We do it all</p>\n                    </div>\n\n            </div>\n        </div>\n    </div>\n\n</section>"
 
 /***/ }),
 
@@ -73,7 +84,7 @@ module.exports = "<p>home works!</p>\n"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div fxLayout=\"row wrap\" fxLayoutAlign=\"center center\" class=\"layout-wrapper\" >\n    <div fxFlex=\"80%\" fxFlex.lt-md=\"100%\" class=\"flex-wrapper\">\n       <ng-content></ng-content>\n    </div>\n </div>"
+module.exports = "<div fxLayout=\"row wrap\" class=\"main-layout\" fxLayoutAlign=\"center center\" class=\"layout-wrapper\" >\n   <div fxFlex=\"100%\" fxFlex.lt-md=\"100%\" class=\"flex-wrapper\">\n      <ng-content></ng-content>\n   </div>\n</div>"
 
 /***/ }),
 
@@ -95,7 +106,7 @@ module.exports = "<p>management works!</p>\n"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-toolbar color=\"primary\">\n    <div fxHide.gt-xs>\n        <button mat-icon-button (click)=\"onToggleSidenav()\">\n            <mat-icon>menu</mat-icon>\n        </button>\n    </div>\n    <div>\n        <a routerLink=\"/home\">Zebulun-Mechanical</a>\n    </div>\n    <div fxFlex fxLayout fxLayoutAlign=\"end\" fxHide.xs>\n        <ul fxLayout fxLayoutGap=\"15px\" class=\"navigation-items\">\n            <li>\n                <a routerLink=\"/aboutus\">About-Us</a>\n            </li>\n            <li>\n                <a routerLink=\"/services\">Our-Services</a>\n            </li>\n            <li>\n                <a routerLink=\"/images\">Zebulun-Gallery</a>\n            </li>\n            <li>\n                <a routerLink=\"/zebulun-users\">Members-Area</a>\n            </li>\n            <li>\n                <a routerLink=\"/management\">Management</a>\n            </li>\n            <li>\n                <a routerLink=\"/contactus\">Contact-Us</a>\n            </li>\n        </ul>\n    </div>\n  </mat-toolbar>"
+module.exports = "<div fxLayout=\"row wrap\" class=\"main-layout\" fxLayoutAlign=\"center center\" class=\"layout-wrapper\" >\n    <div fxFlex=\"80%\" fxFlex.lt-md=\"100%\" class=\"flex-wrapper\">\n            <mat-toolbar color=\"primary\">\n                    <div fxHide.gt-xs>\n                        <button mat-icon-button (click)=\"onToggleSidenav()\">\n                            <mat-icon>menu</mat-icon>\n                        </button>\n                    </div>\n                    <div>\n                        <a routerLink=\"/home\">Zebulun-Mechanical</a>\n                    </div>\n                    <div fxFlex fxLayout fxLayoutAlign=\"end\" fxHide.xs>\n                        <ul fxLayout fxLayoutGap=\"15px\" class=\"navigation-items\">\n                            <li>\n                                <a routerLink=\"/aboutus\">About-Us</a>\n                            </li>\n                            <li>\n                                <a routerLink=\"/services\">Our-Services</a>\n                            </li>\n                            <li>\n                                <a routerLink=\"/images\">Zebulun-Gallery</a>\n                            </li>\n                            <li>\n                                <a routerLink=\"/zebulun-users\">Members-Area</a>\n                            </li>\n                            <li>\n                                <a routerLink=\"/management\">Management</a>\n                            </li>\n                            <li>\n                                <a routerLink=\"/contactus\">Contact-Us</a>\n                            </li>\n                        </ul>\n                    </div>\n                  </mat-toolbar>\n    </div>\n</div>\n"
 
 /***/ }),
 
@@ -419,12 +430,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _zebu_images_gallery_gallery_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./zebu-images/gallery/gallery.component */ "./src/app/zebu-images/gallery/gallery.component.ts");
 /* harmony import */ var _shared_services_email_service_email_service__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./shared/services/email-service/email.service */ "./src/app/shared/services/email-service/email.service.ts");
 /* harmony import */ var _forbiden_forbiden_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./forbiden/forbiden.component */ "./src/app/forbiden/forbiden.component.ts");
+/* harmony import */ var _banner_banner_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./banner/banner.component */ "./src/app/banner/banner.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -474,7 +487,8 @@ var AppModule = /** @class */ (function () {
                 _zebu_images_gallery_gallery_component__WEBPACK_IMPORTED_MODULE_24__["GalleryComponent"],
                 _zebu_images_image_list_image_list_component__WEBPACK_IMPORTED_MODULE_22__["ImageListComponent"],
                 _zebu_images_image_navigation_image_navigation_component__WEBPACK_IMPORTED_MODULE_23__["ImageNavigationComponent"],
-                _forbiden_forbiden_component__WEBPACK_IMPORTED_MODULE_26__["ForbidenComponent"]
+                _forbiden_forbiden_component__WEBPACK_IMPORTED_MODULE_26__["ForbidenComponent"],
+                _banner_banner_component__WEBPACK_IMPORTED_MODULE_27__["BannerComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"].withServerTransition({ appId: 'ng-cli-universal' }),
@@ -489,6 +503,58 @@ var AppModule = /** @class */ (function () {
         })
     ], AppModule);
     return AppModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/banner/banner.component.css":
+/*!*********************************************!*\
+  !*** ./src/app/banner/banner.component.css ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2Jhbm5lci9iYW5uZXIuY29tcG9uZW50LmNzcyJ9 */"
+
+/***/ }),
+
+/***/ "./src/app/banner/banner.component.ts":
+/*!********************************************!*\
+  !*** ./src/app/banner/banner.component.ts ***!
+  \********************************************/
+/*! exports provided: BannerComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BannerComponent", function() { return BannerComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var BannerComponent = /** @class */ (function () {
+    function BannerComponent() {
+    }
+    BannerComponent.prototype.ngOnInit = function () {
+    };
+    BannerComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-banner',
+            template: __webpack_require__(/*! raw-loader!./banner.component.html */ "./node_modules/raw-loader/index.js!./src/app/banner/banner.component.html"),
+            styles: [__webpack_require__(/*! ./banner.component.css */ "./src/app/banner/banner.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], BannerComponent);
+    return BannerComponent;
 }());
 
 
@@ -659,7 +725,7 @@ var ContactusComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2Zvb3Rlci9mb290ZXIuY29tcG9uZW50LmNzcyJ9 */"
+module.exports = ".primaryText{\r\n    color: blueviolet;\r\n    font-weight: bolder;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvZm9vdGVyL2Zvb3Rlci5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksaUJBQWlCO0lBQ2pCLG1CQUFtQjtBQUN2QiIsImZpbGUiOiJzcmMvYXBwL2Zvb3Rlci9mb290ZXIuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5wcmltYXJ5VGV4dHtcclxuICAgIGNvbG9yOiBibHVldmlvbGV0O1xyXG4gICAgZm9udC13ZWlnaHQ6IGJvbGRlcjtcclxufSJdfQ== */"
 
 /***/ }),
 
@@ -763,7 +829,7 @@ var ForbidenComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2hvbWUvaG9tZS5jb21wb25lbnQuY3NzIn0= */"
+module.exports = ".text-centered{\r\n    text-align:center;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaG9tZS9ob21lLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxpQkFBaUI7QUFDckIiLCJmaWxlIjoic3JjL2FwcC9ob21lL2hvbWUuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi50ZXh0LWNlbnRlcmVke1xyXG4gICAgdGV4dC1hbGlnbjpjZW50ZXI7XHJcbn0iXX0= */"
 
 /***/ }),
 
@@ -815,7 +881,7 @@ var HomeComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2xheW91dC9sYXlvdXQuY29tcG9uZW50LmNzcyJ9 */"
+module.exports = ".main-layout{\r\n    background: paleturquoise;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbGF5b3V0L2xheW91dC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0kseUJBQXlCO0FBQzdCIiwiZmlsZSI6InNyYy9hcHAvbGF5b3V0L2xheW91dC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLm1haW4tbGF5b3V0e1xyXG4gICAgYmFja2dyb3VuZDogcGFsZXR1cnF1b2lzZTtcclxufSJdfQ== */"
 
 /***/ }),
 
